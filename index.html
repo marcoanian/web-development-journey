@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Web Dev Journey – マルコ アニアン</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 30px;
+                background-color: #182027;
+                color: #20272d;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .page-container {
+                width: 900px;
+                max-width: 100%;
+                margin: 0 auto;
+                background-color: #e8ece8;
+                border: 3px solid #79c7c5;
+                box-shadow: 8px 8px 0 #0b1115;
+            }
+
+            .system-header {
+                padding: 12px 20px;
+                background-color: #10191f;
+                color: #7fffd4;
+                border-bottom: 3px solid #79c7c5;
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            .system-header p {
+                margin: 4px 0;
+            }
+
+            .main-content {
+                padding: 30px;
+            }
+
+            .profile-section {
+                display: table;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            .profile-image,
+            .profile-text {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .profile-image {
+                width: 140px;
+            }
+
+            .profile-image img {
+                width: 110px;
+                height: 110px;
+                border: 3px solid #20272d;
+                padding: 4px;
+                background-color: white;
+            }
+
+            .profile-text {
+                padding-left: 20px;
+            }
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 8px;
+                color: #173f4a;
+                font-family: Georgia, "Times New Roman", serif;
+            }
+
+            h2 {
+                color: #31545d;
+            }
+
+            .language-line {
+                margin: 5px 0;
+                font-size: 18px;
+            }
+
+            .intro-box {
+                padding: 20px;
+                margin: 25px 0;
+                background-color: #f7f4e8;
+                border: 2px solid #61777c;
+            }
+
+            .intro-box p {
+                line-height: 1.6;
+            }
+
+            .timeline {
+                padding: 0;
+                margin: 20px 0;
+                list-style: none;
+                border-top: 2px solid #61777c;
+            }
+
+            .timeline li {
+                border-bottom: 1px solid #8b9a9e;
+            }
+
+            .timeline a {
+                display: block;
+                padding: 14px;
+                color: #102f39;
+                text-decoration: none;
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            .timeline a:hover {
+                color: #ffffff;
+                background-color: #31545d;
+            }
+
+            .year {
+                display: inline-block;
+                width: 90px;
+                color: #8b3150;
+                font-weight: bold;
+            }
+
+            .secondary-links {
+                margin-top: 30px;
+                padding-top: 15px;
+                border-top: 2px solid #61777c;
+            }
+
+            .secondary-links a {
+                margin-right: 15px;
+                color: #173f4a;
+            }
+
+            .status-footer {
+                padding: 15px 20px;
+                background-color: #10191f;
+                color: #a6d9d6;
+                border-top: 3px solid #79c7c5;
+                font-family: "Courier New", Courier, monospace;
+                font-size: 14px;
+            }
+
+            .status-footer p {
+                margin: 4px 0;
+            }
+
+            @media (max-width: 650px) {
+                body {
+                    padding: 10px;
+                }
+
+                .profile-image,
+                .profile-text {
+                    display: block;
+                    width: 100%;
+                    padding-left: 0;
+                    text-align: center;
+                }
+
+                .profile-text {
+                    margin-top: 20px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page-container">
+            <header class="system-header">
+                <p>&gt; WEB DEVELOPMENT ARCHIVE</p>
+                <p>&gt; SYSTEM STATUS: ONLINE</p>
+                <p>&gt; USER: MARCO </p>
+            </header>
+
+            <main class="main-content">
+                <section class="profile-section">
+                    <div class="profile-image">
+                        <img
+                            src="./assets/images/jp_marco1.png"
+                            alt="Portrait of Marco"
+                        >
+                    </div>
+
+                    <div class="profile-text">
+                        <h1>A Journey Through Web Development</h1>
+
+                        <p class="language-line">
+                            こんにちは、マルコです。
+                        </p>
+
+                        <p class="language-line">
+                            你好，我叫馬高。
+                        </p>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section class="intro-box">
+                    <h2>Welcome to My Web Development Archive</h2>
+
+                    <p>
+                        Hello, my name is Marco. I am a software development
+                        student currently learning full-stack web development.
+                    </p>
+
+                    <p>
+                        This website documents my journey through the history
+                        and evolution of web development. Instead of creating
+                        only one modern website, I am building several smaller
+                        websites inspired by different periods of web design.
+                    </p>
+
+                    <p>
+                        The archive will continue to grow as I learn more about
+                        HTML, CSS, JavaScript, backend development, databases,
+                        and modern full-stack technologies.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Explore the Web Development Timeline</h2>
+
+                    <p>
+                        Select an era to explore a different stage in the
+                        development of the web.
+                    </p>
+
+                    <ul class="timeline">
+                        <li>
+                            <a href="./public/early_web.html">
+                                <span class="year">1980s</span>
+                                Hypertext Beginnings
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./public/pure_html_90.html">
+                                <span class="year">1990s</span>
+                                Pure HTML
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./public/early_2000.html">
+                                <span class="year">2000s</span>
+                                Early CSS
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./public/respo_web.html">
+                                <span class="year">2010s</span>
+                                Responsive Web
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./public/modern_web_2020.html">
+                                <span class="year">2020s</span>
+                                Modern Web Applications
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <nav class="secondary-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./public/project_progress.html">Projects</a>
+                    <a href="./public/about_me.html">About Me</a>
+                </nav>
+            </main>
+
+            <footer class="status-footer">
+                <p>&gt; PROJECT STATUS: IN DEVELOPMENT</p>
+                <p>&gt; CURRENT TECHNOLOGIES: HTML / CSS</p>
+                <p>&gt; HOSTED WITH GITHUB PAGES</p>
+            </footer>
+        </div>
+    </body>
+</html>
